@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery chat</title>
+  
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/chat.js"></script>
+</head>
+<body>
+  <div class="block">
+    <div class="centered">
+      <div id="chatbox" class="box">
+        <ul class="colorlist">
+          <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        </ul><h1>Type a name and start chatting!</h1>
+        <div id="login">          
+          <input type="text" name="name" placeholder="Your name" maxlength="10" autocomplete="off" />
+          <button>Connect</button>
+        </div>
+        <div id="chat">
+            <div id="messages"></div>
+            <div id="#controls">
+              <input type="text" name="message" autocomplete="off" />
+              <button id="send">Send</button>
+              <button id="youtube">Youtube</button>
+            </div>
+        </div>
+      </div>
+      <p class="disclaimer">Design based on an image of a Wordpress login form.</p>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="box">
+      <div class="content"></div>
+      <div class="controls">
+        <input type="text" name="search" placeholder="Type to search in YouTube" autocomplete="off" />
+        <button id="close">Close</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

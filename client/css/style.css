@@ -1,0 +1,325 @@
+@import url(reset.css);
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #556270;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.block {
+    height: 100%;
+    text-align: center;
+}
+ 
+.block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+ 
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.centered ul.colorlist li:first-child {
+    border-top-left-radius: 5px;
+    
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;    
+}
+
+.centered ul.colorlist li:last-child {
+    border-top-right-radius: 5px;    
+
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+ 
+h1 {
+    background-color: #f7f7f7;
+    color: #a8a9aa;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1em;
+    position: relative;
+    z-index: 9;
+}
+
+p.disclaimer {
+    color: #97a9bc;
+    margin-top: 1em;
+}
+ 
+button {
+    background-color: #f1786d;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 0 #eb5757;
+    border-style: none;
+    color: #f7f7f7;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    height: 1.9em;
+    outline: none;
+    margin: 0 0.1em;
+    transition: height 2s linear;
+    width: 100%;
+    
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 5px 0 0 #eb5757;
+    -moz-transition: height 2s ease;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 5px 0 0 #eb5757;
+    -webkit-transition: height 2s ease;
+}
+ 
+button:hover, button:focus {
+    background-color: #eb5757;
+    box-shadow: 0 5px 0 0 #df3434;
+
+    -moz-box-shadow: 0 5px 0 0 #df3434;
+    -webkit-box-shadow: 0 5px 0 0 #df3434;
+}
+ 
+input[type="text"] {
+    appearance: none;
+    border: solid 2px #ececec;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    box-shadow: 0 5px 0 0 #ececec;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 0.2em;
+    text-align: center;
+    transition: box-shadow 0.3s, border 0.3s;
+    width: 100%;
+  
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 5px 0 0 #ececec;
+    -moz-box-sizing: border-box;
+    -moz-transition: box-shadow 0.3s, border 0.3s;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 5px 0 0 #ececec;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus, input[type="text"].focus {
+    outline: none;
+    border: solid 2px #cfcfcf;
+    box-shadow: 0 5px 0 0 #cfcfcf;
+    
+    -moz-box-shadow: 0 5px 0 0 #cfcfcf;
+    -webkit-box-shadow: 0 5px 0 0 #cfcfcf;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    min-width: 400px;
+    width: 400px;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#login button {
+    display: none;
+    margin: 1em 0 0.2em; 
+}
+
+#login #form {
+    padding: 2em;
+}
+
+
+#login, #chat {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+#chat {
+    display: none;
+    position: relative;
+}
+
+#chat input[type="text"] {
+    padding: 0.16em;
+    margin-right: 0.1em;
+    text-align: left;
+    width: 70%;
+}
+
+#chat button#send {
+    width: 15%;
+}
+
+#chat button#youtube {
+    background: #f1786d url('../img/youtube.png') no-repeat center center;
+    background-size: 90%;
+    color: transparent;
+    width: 10%;
+}
+
+#chat #messages {
+    height: 400px;
+    overflow: auto;
+}
+
+#chat #messages .message {
+    border: solid 2px #ececec;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 0 #ececec;
+    font-size: 1.4em;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: left;
+    
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 5px 0 0 #ececec;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 5px 0 0 #ececec;
+}
+
+#chat #messages .message span {
+    font-weight: 400;   
+}
+
+#chat #messages .system {
+    font-size: 1.4em;
+    margin: 1em;
+    text-align: center;
+}
+
+ul.colorlist {
+    list-style-type: none;
+    height: 15px;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+
+ul.colorlist li {
+    display: inline-block;
+    height: 15px;
+    transition: padding 0.5s ease;
+    vertical-align: top;
+    width: 12.5%;
+    
+    -moz-transition: padding 0.5s ease;
+    -webkit-transition: padding 0.5s ease;
+}
+
+ul.colorlist li:hover {
+    padding-bottom: 20px;
+}
+ 
+ul.colorlist li:nth-child(1) {
+    background-color: #c4e27e;
+}
+ 
+ul.colorlist li:nth-child(2) {
+    background-color: #f6fdca;
+}
+ 
+ul.colorlist li:nth-child(3) {
+    background-color: #ffcd72;
+}
+ 
+ul.colorlist li:nth-child(4) {
+    background-color: #f1786d;
+}
+ 
+ul.colorlist li:nth-child(5) {
+    background-color: #dd9ebd;
+}
+ 
+ul.colorlist li:nth-child(6) {
+    background-color: #c69cde;
+}
+ 
+ul.colorlist li:nth-child(7) {
+    background-color: #6799e0;
+}
+ 
+ul.colorlist li:nth-child(8) {
+    background-color: #63c1e3;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;    
+    width: 100%;
+    z-index: 999;
+}
+
+.overlay .box {
+    left: 50%;
+    margin-left: -315px;
+    margin-top: -220px;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    width: 600px;
+}
+
+.overlay .box .content {
+    height: 350px;
+    margin-bottom: 0.5em;
+    overflow: auto;
+}
+
+.overlay .box .content .video {
+    margin-bottom: 1em;
+}
+
+.overlay .box .content h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.6em;
+}
+
+.overlay .box .content a {
+    color: #333;
+    text-decoration: none;   
+}
+
+.overlay .box .content p {
+}
+
+.overlay .box .content img {
+    float: left;
+    margin-right: 1em;
+}
+
+.overlay .box .controls {
+    bottom: 0;
+    height: 2.8em;
+    position: relative;
+    width: 100%;
+}
+
+.overlay .box input {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 82%;
+}
+
+.overlay .box button {
+    position: absolute;
+    right: 0;
+    width: 15%; 
+}
